@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTES</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="flex flex-row bg-white">
+        <div class="m-6 w-52">
+            <h1 class="text-lg font-bold tracking-widest">NOTES</h1>
+            <nav class="pt-10 pb-10 border-b border-gray-200">
+                <div class="flex justify-end">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </div>
+                <ul class="space-y-6">
+                    <li class="flex flex-row space-x-2">
+                        <svg class="text-blue-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                        <a class="text-blue-400 font-light" href="#">All notes</a>
+                    </li>
+                    <li class="group flex flex-row space-x-2">
+                        <svg class="group-hover:text-blue-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <a class="group-hover:text-blue-400 font-light" href="#">Calendar</a>
+                    </li>
+                    <li class="group flex flex-row justify-between">    
+                        <div class="flex flex-none">
+                            <svg class="group-hover:text-blue-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path></svg>
+                            <a class="group-hover:text-blue-400 px-2 font-light" href="#">Tags</a>
+                        </div>
+                        <svg class="group-hover:text-blue-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                    </li>    
+                    <li class="group flex flex-row space-x-2">
+                        <svg class="group-hover:text-blue-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                        <a class="group-hover:text-blue-400 font-light" href="#">Archive</a>
+                    </li>
+                    <li class="group flex flex-row space-x-2">
+                        <svg class="group-hover:text-blue-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                        <a class="group-hover:text-blue-400 font-light" href="#">Trash</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="pt-10">
+                <button class="bg-yellow-400 p-4 text-white rounded-lg flex justify-between w-full"> 
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                    <span>Add new note</span>
+                </button>
+            </div>
+        </div>
+        <div class="w-full">
+            <div class="h-16 flex justify-between">
+                <div class="flex flex-row items-center space-x-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <input class="outline-none font-semibold" type="text" placeholder="Search" />
+                </div>
+                <div class="flex flex-row items-center space-x-2 pr-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                    <h5 class="font-semibold">Scarlett</h5>
+                    <div class="bg-cover bg-center h-12 w-12 rounded-full" style="background-image: url(https://images-na.ssl-images-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_UY256_CR19,0,172,256_AL_.jpg);"></div>
+                </div>
+            </div>
+            <div class="rounded-tl-3xl bg-gray-50 h-full p-10">
+                <div class="flex flex-row justify-between items-center">
+                    <ul class="space-x-12">
+                        <li class="inline-block font-medium border-b-4 text-blue-400 border-blue-400 p-3">All</li>
+                        <li class="inline-block text-gray-400 font-medium border-b-4 hover:text-blue-400 border-transparent hover:border-blue-400 p-3">Personal</li>
+                        <li class="inline-block text-gray-400 font-medium border-b-4 hover:text-blue-400 border-transparent hover:border-blue-400 p-3">Projects</li>
+                        <li class="inline-block text-gray-400 font-medium border-b-4 hover:text-blue-400 border-transparent hover:border-blue-400 p-3">Business</li>
+                    </ul>
+                    <svg class="text-gray-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                </div>
+                
+                <div>
+                    <div class="grid grid-cols-3 gap-6 mt-6">
+                        <div class="bg-white shadow-xl rounded-3xl p-6">
+                            <div class="flex flex-row justify-between border-b border-gray-300 pb-4">
+                                <button class="text-xs bg-yellow-400 text-white px-2 rounded-full">Personal</button>
+                                <svg class="text-gray-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+                            </div>
+                            <div class="flex flex-row items-center justify-between mt-4 mb-4">
+                                <div class="flex flex-col">
+                                    <span class="text-sm text-gray-400 font-light">20.12.2020</span>
+                                    <h5 class="font-semibold">Shooting with Nastya</h5>
+                                </div>
+                                <button class="text-xs text-white bg-gray-400 px-2 py-1 rounded-full flex flex-row">
+                                    <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>2
+                                </button>
+                            </div>
+                            <p class="text-sm text-gray-400">I need to meet with Nastya Gromko near the metro station Golder Gate. After this we'll go to Paul coffe shop and doing some photos for me instagram content.</p>
+                            <div class="flex flex-row justify-between items-center mt-4">
+                                <div class="flex flex-row space-x-3">
+                                    <div class="bg-cover bg-center h-12 w-12 rounded-full border-2 border-yellow-400" style="background-image: url(https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjA0ODk1OF5BMl5BanBnXkFtZTcwMTA4ODM3OQ@@._V1_UY256_CR5,0,172,256_AL_.jpg);"></div>
+                                    <div class="bg-cover bg-center h-12 w-12 rounded-full border-2 border-yellow-400" style="background-image: url(https://images-na.ssl-images-amazon.com/images/M/MV5BMzI3NTYwMzIxM15BMl5BanBnXkFtZTcwMzI1ODY1NA@@._V1_UX172_CR0,0,172,256_AL_.jpg);"></div>
+                                </div>
+                                <div class="text-red-400 text-sm space-x-1 font-semibold flex flex-row items-center">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <span>12.00, Today</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-sm hover:shadow-xl rounded-3xl p-6">
+                            <div class="flex flex-row justify-between border-b border-gray-300 pb-4">
+                                <button class="text-xs bg-blue-400 text-white px-2 rounded-full">Projects</button>
+                                <svg class="text-gray-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+                            </div>
+                            <div class="flex flex-row items-center justify-between mt-4 mb-4">
+                                <div class="flex flex-col">
+                                    <span class="text-sm text-gray-400 font-light">15.12.2020</span>
+                                    <h5 class="font-semibold">Create concept for Taxi app</h5>
+                                </div>
+                                <button class="text-xs text-white bg-gray-400 px-2 py-1 rounded-full flex flex-row">
+                                    <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>2
+                                </button>
+                            </div>
+                            <p class="text-sm text-gray-400">I got a new project application for Taxi. First, I need to do research and concept for this project. For start I need to write a litte technical task for better understanding this</p>
+                            <div class="flex flex-row items-center mt-4">
+                                <div class="flex flex-row space-x-3">
+                                    <div class="bg-cover bg-center h-12 w-12 rounded-full border-2 border-yellow-400" style="background-image: url(https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjA0ODk1OF5BMl5BanBnXkFtZTcwMTA4ODM3OQ@@._V1_UY256_CR5,0,172,256_AL_.jpg);"></div>
+                                    <div class="bg-cover bg-center h-12 w-12 rounded-full border-2 border-yellow-400" style="background-image: url(https://images-na.ssl-images-amazon.com/images/M/MV5BMzI3NTYwMzIxM15BMl5BanBnXkFtZTcwMzI1ODY1NA@@._V1_UX172_CR0,0,172,256_AL_.jpg);"></div>
+                                    <div class="bg-blue-400 h-12 w-12 rounded-full p-3 text-white">+5</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-sm hover:shadow-xl rounded-3xl p-6">
+                            <div class="flex flex-row justify-between border-b border-gray-300 pb-4">
+                                <button class="text-xs bg-yellow-400 text-white px-2 rounded-full">Personal</button>
+                                <svg class="text-gray-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+                            </div>
+                            <div class="flex flex-row items-center justify-between mt-4 mb-4">
+                                <div class="flex flex-col">
+                                    <span class="text-sm text-gray-400 font-light">20.12.2020</span>
+                                    <h5 class="font-semibold">Shooting with Nastya</h5>
+                                </div>
+                                <button class="text-xs text-white bg-gray-400 px-2 py-1 rounded-full flex flex-row">
+                                    <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>2
+                                </button>
+                            </div>
+                            <p class="text-sm text-gray-400">I need to meet with Nastya Gromko near the metro station Golder Gate. After this we'll go to Paul coffe shop and doing some photos for me instagram content.</p>
+                            <div class="flex flex-row justify-end items-center mt-8">
+                                <div class="text-blue-400 text-sm space-x-1 font-semibold flex flex-row items-center">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <span>12.00, Monday</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-sm hover:shadow-xl rounded-3xl p-6">
+                            <div class="flex flex-row justify-between border-b border-gray-300 pb-4">
+                                <button class="text-xs bg-yellow-400 text-white px-2 rounded-full">Personal</button>
+                                <svg class="text-gray-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+                            </div>
+                            <div class="flex flex-row items-center justify-between mt-4 mb-4">
+                                <div class="flex flex-col">
+                                    <span class="text-sm text-gray-400 font-light">20.12.2020</span>
+                                    <h5 class="font-semibold">Shooting with Nastya</h5>
+                                </div>
+                                <button class="text-xs text-white bg-gray-400 px-2 py-1 rounded-full flex flex-row">
+                                    <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>2
+                                </button>
+                            </div>
+                            <p class="text-sm text-gray-400">I need to meet with Nastya Gromko near the metro station Golder Gate. After this we'll go to Paul coffe shop and doing some photos for me instagram content.</p>
+                            <div class="flex flex-row justify-between items-center mt-4">
+                                <div class="flex flex-row space-x-3">
+                                    <div class="bg-cover bg-center h-12 w-12 rounded-full border-2 border-yellow-400" style="background-image: url(https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjA0ODk1OF5BMl5BanBnXkFtZTcwMTA4ODM3OQ@@._V1_UY256_CR5,0,172,256_AL_.jpg);"></div>
+                                    <div class="bg-cover bg-center h-12 w-12 rounded-full border-2 border-yellow-400" style="background-image: url(https://images-na.ssl-images-amazon.com/images/M/MV5BMzI3NTYwMzIxM15BMl5BanBnXkFtZTcwMzI1ODY1NA@@._V1_UX172_CR0,0,172,256_AL_.jpg);"></div>
+                                </div>
+                                <div class="text-red-400 text-sm space-x-1 font-semibold flex flex-row items-center">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <span>12.00, Today</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-sm hover:shadow-xl rounded-3xl p-6">
+                            <div class="flex flex-row justify-between border-b border-gray-300 pb-4">
+                                <button class="text-xs border-gray-400 border border-dashed text-gray-400 px-2 rounded-full">Add tag</button>
+                                <svg class="text-gray-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+                            </div>
+                            <div class="flex flex-row items-center justify-between mt-4 mb-4">
+                                <div class="flex flex-col">
+                                    <span class="text-sm text-gray-400 font-light">20.12.2020</span>
+                                    <h5 class="font-semibold">Shooting with Nastya</h5>
+                                </div>
+                                <button class="text-xs text-white bg-gray-400 px-2 py-1 rounded-full flex flex-row">
+                                    <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>2
+                                </button>
+                            </div>
+                            <p class="text-sm text-gray-400">I need to meet with Nastya Gromko near the metro station Golder Gate. After this we'll go to Paul coffe shop and doing some photos for me instagram content.</p>
+                            <div class="flex flex-row justify-between items-center mt-4">
+                                <div class="flex flex-row space-x-3">
+                                    <div class="bg-cover bg-center h-12 w-12 rounded-full border-2 border-yellow-400" style="background-image: url(https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMjA0ODk1OF5BMl5BanBnXkFtZTcwMTA4ODM3OQ@@._V1_UY256_CR5,0,172,256_AL_.jpg);"></div>
+                                    <div class="bg-cover bg-center h-12 w-12 rounded-full border-2 border-yellow-400" style="background-image: url(https://images-na.ssl-images-amazon.com/images/M/MV5BMzI3NTYwMzIxM15BMl5BanBnXkFtZTcwMzI1ODY1NA@@._V1_UX172_CR0,0,172,256_AL_.jpg);"></div>
+                                </div>
+                                <div class="text-blue-400 text-sm space-x-1 font-semibold flex flex-row items-center">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <span>12.00, Monday</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-sm hover:shadow-xl rounded-3xl p-6">
+                            <div class="flex flex-row justify-between border-b border-gray-300 pb-4">
+                                <button class="text-xs bg-yellow-400 text-white px-2 rounded-full">Personal</button>
+                                <svg class="text-gray-400 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+                            </div>
+                            <div class="flex flex-row items-center justify-between mt-4 mb-4">
+                                <div class="flex flex-col">
+                                    <span class="text-sm text-gray-400 font-light">20.12.2020</span>
+                                    <h5 class="font-semibold">Shooting with Nastya</h5>
+                                </div>
+                                <button class="text-xs text-white bg-gray-400 px-2 py-1 rounded-full flex flex-row">
+                                    <svg class="text-white w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>2
+                                </button>
+                            </div>
+                            <p class="text-sm text-gray-400">I need to meet with Nastya Gromko near the metro station Golder Gate. After this we'll go to Paul coffe shop and doing some photos for me instagram content.</p>
+                            <div class="flex flex-row justify-end items-center mt-8">
+                                <div class="text-red-400 text-sm space-x-1 font-semibold flex flex-row items-center">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <span>12.00, Today</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
